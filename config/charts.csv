@@ -1,0 +1,3 @@
+chart_id,package,function
+1,charts.python.matplotlib.bar,bar
+2,charts.python.matplotlib.barh,barh

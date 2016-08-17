@@ -1,3 +1,15 @@
+# macOS
+.DS_Store
+
+# My configuration
+.idea/*
+output/*
+data/*
+sample_json/*
+*.swp
+test.py
+input.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
