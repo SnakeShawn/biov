@@ -36,5 +36,4 @@ if __name__ == '__main__':
         print("Error, Invalid Parameters!!!")
         exit()
     else:
-        biov(sys.argv[1]) 
-
+        biov(sys.argv[1])
