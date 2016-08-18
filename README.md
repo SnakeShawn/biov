@@ -1,4 +1,15 @@
-# biov.
+# Biological visualization
+
+### Requirement
+> **Python2.7**：numpy,matplotlib
+
+> **R**:ggplot2
+	
+
+### Structure
+Recommend you to organize your project like this tree.
+
+```
 .
 ├── README.md
 ├── __init__.py
@@ -35,4 +46,6 @@
     ├── barh.json
     └── rggplot2geomdot.json
 
-9 directories, 35 files
+```
+
+
