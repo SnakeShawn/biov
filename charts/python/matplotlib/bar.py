@@ -34,7 +34,7 @@ def bar(data, parameters, output):
 
     param = ''
     if 'align' in parameters.keys():
-        param = param + ',align="' + parameters['align']+'"'
+        param = param + ',align="' + str(parameters['align'])+'"'
 
     # draw
     x_pos = np.arange(len(x))
