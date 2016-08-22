@@ -36,13 +36,13 @@ def barh(data, parameters, output):
         param = param + ',align="' + parameters['align']+'"'
     if 'alpha' in parameters.keys():
         param = param + ',alpha=' + parameters['alpha']
-
+    if 'num' in parameters.keys():
     # draw
     y_pos = np.arange(len(y))
     exec("plt.barh(y_pos, x "+param+")")
 
     plt.yticks(y_pos, y)
 
-    savefig(output)
+    savefig(output, format='svg')
 
 

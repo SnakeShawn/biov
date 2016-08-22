@@ -1,4 +1,8 @@
 chart_id,package,function
 1,charts.python.matplotlib.bar,bar
 2,charts.python.matplotlib.barh,barh
+3,charts.python.matplotlib.bargroup,bargroup
+4,charts.python.matplotlib.barstacked,barstacked
+5,charts.python.matplotlib.barstacked,barstackedn
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
+test,charts.python.matplotlib.histtest,histogram

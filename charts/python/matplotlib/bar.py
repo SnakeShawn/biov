@@ -41,5 +41,5 @@ def bar(data, parameters, output):
     exec("plt.bar(x_pos, y "+param+")")
 
     plt.xticks(x_pos, x)
-
-    savefig(output)
+    plt.legend()
+    savefig(output, format='svg')
