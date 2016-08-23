@@ -23,8 +23,7 @@ def barstacked(data, parameters, output):
         example_num = len(headers)-1
         for row in f_csv:
             x.append(row[0])
-            y.append(map(int, row[1:example_num+1]))
-
+            y.append(map(float, row[1:example_num+1]))
 
     # parameters
     colors = ['#BCD8E3', '#E0A295', '#75625E', '#7F9AA5', '#AFCDD8', '#E9CDA6', '#70B879', '#E8E098', '#898A82',
@@ -60,6 +59,7 @@ def barstacked(data, parameters, output):
 
     savefig(output, format='svg')
 
+
 def barstackedn(data, parameters, output):
     # data
     x = []
@@ -72,8 +72,7 @@ def barstackedn(data, parameters, output):
         example_num = len(headers)-1
         for row in f_csv:
             x.append(row[0])
-            y.append(map(int, row[1:example_num+1]))
-
+            y.append(map(float, row[1:example_num+1]))
 
     # parameters
     item_num = len(x)

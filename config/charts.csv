@@ -4,5 +4,8 @@ chart_id,package,function
 3,charts.python.matplotlib.bargroup,bargroup
 4,charts.python.matplotlib.barstacked,barstacked
 5,charts.python.matplotlib.barstacked,barstackedn
+6,charts.python.matplotlib.errorbar,errorbar
+7,charts.python.matplotlib.histogram,hist_unequalBins
+8,charts.python.matplotlib.histogram,hist_stepfilled
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
 test,charts.python.matplotlib.histtest,histogram
