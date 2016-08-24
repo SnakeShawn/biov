@@ -96,10 +96,6 @@ def hist_stepfilled(data, parameters, output):
         num_bin = int(parameters['num_bin'])
     
     param = ''
-    """
-    if 'align' in parameters.keys():
-        param = param + ',align="' + str(parameters['align'])+'"'
-    """
 
     if 'normed' in parameters.keys():
         param = param + ', normed='+ str(parameters['normed'])+''
