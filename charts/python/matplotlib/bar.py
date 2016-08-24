@@ -42,4 +42,5 @@ def bar(data, parameters, output):
 
     plt.xticks(x_pos, x)
     plt.legend()
+
     savefig(output, format='svg')

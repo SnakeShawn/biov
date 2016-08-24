@@ -8,7 +8,7 @@ chart_id,package,function
 7,charts.python.matplotlib.histogram,hist_unequalBins
 8,charts.python.matplotlib.histogram,hist_stepfilled
 9,charts.python.matplotlib.contour3d,contour3d
-10,charts.python.matplotlib.venn,venn2
-11,charts.python.matplotlib.venn,venn3
-12,charts.python.matplotlib.venn,venn4
+10,charts.python.matplotlib.venn,myvenn2
+11,charts.python.matplotlib.venn,myvenn3
+12,charts.python.matplotlib.venn,myvenn4
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot

@@ -35,9 +35,10 @@ def bargroup(data, parameters, output):
              '#BDA09C', '#D76475', '#F2C2B8', '#0C5C4F', '#108484', '#F7AF02', '#F29653', '#7C976A', '#FFE983',
              '#70B879', '#AAD9A5', '#8AC2BF']
     color = random.sample(colors, examples)
+
     if 'figsize' in parameters.keys():
         figsize = eval(parameters['figsize'])
-    fig = plt.figure(facecolor='w')
+    fig = plt.figure(facecolor='w', figsize=figsize)
     if 'xlabel' in parameters.keys():
         plt.xlabel(parameters['xlabel'])
     if 'title' in parameters.keys():
@@ -57,6 +58,7 @@ def bargroup(data, parameters, output):
     box = ax.get_position()
     ax.set_position([box.x0, box.y0+0.07, box.width * 0.82, box.height*0.9])
     xlocation_init = [ float(t)*width*(examples+2)+0.1 for t in np.arange(features)]
+
     for i in range(examples):
         xlocation = [(t + width*i*1.1) for t in xlocation_init]
         cbar = plt.bar(xlocation, y[i], width, color=color[i], edgecolor='')
