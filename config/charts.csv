@@ -11,4 +11,5 @@ chart_id,package,function
 10,charts.python.matplotlib.venn,myvenn2
 11,charts.python.matplotlib.venn,myvenn3
 12,charts.python.matplotlib.venn,myvenn4
+pythonmatplotlibbarstacked,charts.python.matplotlib.barstacked,barstacked
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
