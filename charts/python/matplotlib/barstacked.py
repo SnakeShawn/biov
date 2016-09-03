@@ -17,6 +17,7 @@ def barstacked(data, parameters, output):
     y = []
     legend = ()
     example_num = 0
+    figsize = (8,6)
     with open(data) as f:
         f_csv = csv.reader(f)
         headers = next(f_csv)
@@ -30,6 +31,11 @@ def barstacked(data, parameters, output):
              '#BDA09C', '#D76475', '#F2C2B8', '#0C5C4F', '#108484', '#F7AF02', '#F29653', '#7C976A', '#FFE983',
              '#70B879', '#AAD9A5', '#8AC2BF']
     color = random.sample(colors, len(x))
+
+    if 'figsize' in parameters.keys():
+        figsize = eval(parameters['figsize'])
+    fig = plt.figure(facecolor='w', figsize=figsize)
+
     if 'xlabel' in parameters.keys():
         plt.xlabel(parameters['xlabel'])
     if 'title' in parameters.keys():
@@ -40,11 +46,12 @@ def barstacked(data, parameters, output):
     param = ''
     if 'align' in parameters.keys():
         param = param + ',align="' + parameters['align']+'"'
+    if 'alpha' in parameters.keys():
+        param = param + ',alpha=' + str(parameters['alpha'])
 
     # draw
     x_pos = [ float(t)+0.2 for t in np.arange(example_num)]
     bottom = [0.]* example_num
-    fig = plt.figure(facecolor='w')
     ax = fig.add_subplot(111)
     box = ax.get_position()
     ax.set_position([box.x0, box.y0+0.07, box.width * 0.82, box.height*0.9])
@@ -54,7 +61,7 @@ def barstacked(data, parameters, output):
         bottom = [a+b for a, b in zip(y[i], bottom)]
 
     plt.xticks(x_pos, headers[1:])
-    if parameters['legend'] == 'true':
+    if parameters['legend'] == 'True':
         fig.legend(legend, x, 'center right', bbox_to_anchor=(0.98, 0.5), fontsize =10)
 
     savefig(output, format='svg')
@@ -66,6 +73,7 @@ def barstackedn(data, parameters, output):
     y = []
     legend = ()
     example_num = 0
+    figsize = (8,6)
     with open(data) as f:
         f_csv = csv.reader(f)
         headers = next(f_csv)
@@ -80,6 +88,11 @@ def barstackedn(data, parameters, output):
              '#BDA09C', '#D76475', '#F2C2B8', '#0C5C4F', '#108484', '#F7AF02', '#F29653', '#7C976A', '#FFE983',
              '#70B879', '#AAD9A5', '#8AC2BF']
     color = random.sample(colors, item_num)
+
+    if 'figsize' in parameters.keys():
+        figsize = eval(parameters['figsize'])
+    fig = plt.figure(facecolor='w', figsize=figsize)
+
     if 'xlabel' in parameters.keys():
         plt.xlabel(parameters['xlabel'])
     if 'title' in parameters.keys():
@@ -90,11 +103,12 @@ def barstackedn(data, parameters, output):
     param = ''
     if 'align' in parameters.keys():
         param = param + ',align="' + parameters['align']+'"'
+    if 'alpha' in parameters.keys():
+        param = param + ',alpha=' + str(parameters['alpha'])
 
     # draw
     x_pos = [ float(t)+0.2 for t in np.arange(example_num)]
     bottom = [0.]* example_num
-    fig = plt.figure(facecolor='w')
     ax = fig.add_subplot(111)
     box = ax.get_position()
     ax.set_position([box.x0, box.y0+0.07, box.width * 0.82, box.height*0.9])
@@ -110,7 +124,7 @@ def barstackedn(data, parameters, output):
         bottom = [a+b for a, b in zip(y[i], bottom)]
     plt.ylim(ymax=1)
     plt.xticks(x_pos, headers[1:])
-    if parameters['legend'] == 'true':
+    if parameters['legend'] == 'True':
         fig.legend(legend, x, 'center right', bbox_to_anchor=(0.98, 0.5), fontsize =10)
 
     savefig(output, format='svg')

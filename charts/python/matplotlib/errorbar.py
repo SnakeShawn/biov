@@ -8,7 +8,6 @@ import csv
 import matplotlib.pyplot as plt
 plt.rcdefaults()
 import numpy as np
-import matplotlib.pyplot as plt
 from matplotlib.pyplot import savefig
 
 
@@ -34,15 +33,15 @@ def errorbar(data, parameters, output):
 
     param = ''
     if 'xerr' in parameters.keys():
-        param = param + ',xerr=' + parameters['xerr']
+        param = param + ',xerr=' + str(parameters['xerr'])
 	if 'yerr' in parameters.keys():
-	    param = param + ',yerr=' + parameters['yerr']
+	    param = param + ',yerr=' + str(parameters['yerr'])
 	if 'color' in parameters.keys():
 	    param = param + ',color="' + parameters['color']+'"'
 	if 'marker' in parameters.keys():
 	    param = param + ',marker="' + parameters['marker']+'"'
 	if 'ms' in parameters.keys():
-	    param = param + ',ms=' + parameters['ms']
+	    param = param + ',ms=' + str(parameters['ms'])
 	if 'ls' in parameters.keys():
 	    param = param + ',ls="' + parameters['ls']+'"'
 	if 'lolims' in parameters.keys():
@@ -56,13 +55,13 @@ def errorbar(data, parameters, output):
 	if 'mec' in parameters.keys():
 	    param = param + ',mec="' + parameters['mec']+'"'
 	if 'capsize' in parameters.keys():
-	    param = param + ',capsize=' + parameters['capsize']
+	    param = param + ',capsize=' + str(parameters['capsize'])
 	if 'capthick' in parameters.keys():
-	    param = param + ',capthick=' + parameters['capthick']
+	    param = param + ',capthick=' + str(parameters['capthick'])
 	if 'barsabove' in parameters.keys():
 	    param = param + ',barsabove="' + parameters['barsabove']+'"'
 	if 'linewidth' in parameters.keys():
-	    param = param + ',linewidth=' + parameters['linewidth']
+	    param = param + ',linewidth=' + str(parameters['linewidth'])
 
     # draw
     exec("plt.errorbar(x, y "+param+")")

@@ -6,9 +6,11 @@
 output/*
 data/*
 sample_json/*
+detail/*
 *.swp
 test.py
 input.json
+charts.xlsx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

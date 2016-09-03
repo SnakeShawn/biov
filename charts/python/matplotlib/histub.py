@@ -1,7 +1,7 @@
 """
 Author: Yu Liujun
-Date: 2016/08/29
-Version: 2.0
+Date: 2016/08/30
+Version: 1.0
 Description:
 """
 import csv
@@ -9,10 +9,9 @@ import matplotlib.pyplot as plt
 plt.rcdefaults()
 import numpy as np
 from matplotlib.pyplot import savefig
-import matplotlib.mlab as mlab
 import random
 
-def histogram(data, parameters, output):
+def histub(data, parameters, output):
 
     # data
     x = []
@@ -23,35 +22,23 @@ def histogram(data, parameters, output):
         #input array
         for row in f_csv:
             x.append(float(row[0]))
-
-    #   a total count of the number of bars - predefined in jason
-    #   defaultly set to 20, can be read and modified later
-    num_bin = 20
     
     # total of inputs
     count = len(x)
 
-    # a mean of distribution
-    mu = sum(i for i in x)/count
-
-    # standard deviation of distribution
-    sdsq = sum([(i - mu) ** 2 for i in x])
-    sigma = (sdsq / count) ** .5
-    
     # parameters
     if 'xlabel' in parameters.keys():
         plt.xlabel(parameters['xlabel'])
     if 'title' in parameters.keys():
         # besides the title, also print the mu and sigma value
-        plt.title(parameters['title']+' $\mu='+str(round(mu,2))+'$, $\sigma='+str(round(sigma,2))+'$')
+        plt.title(parameters['title']+' - Unequal Bins')
     if 'ylabel' in parameters.keys():
         plt.ylabel(parameters['ylabel'])
 
-        # defining num_bin, normed, facecolor, alpha
-    if 'num_bin' in parameters.keys():
-        num_bin = int(parameters['num_bin'])
+    # defining normed, facecolor, alpha
     
     param = ''
+    bins = []
 
     colors = ['#BCD8E3', '#E0A295', '#75625E', '#7F9AA5', '#AFCDD8', '#E9CDA6', '#70B879', '#E8E098', '#898A82',
              '#BDA09C', '#D76475', '#F2C2B8', '#0C5C4F', '#108484', '#F7AF02', '#F29653', '#7C976A', '#FFE983',
@@ -60,7 +47,6 @@ def histogram(data, parameters, output):
 
     if 'normed' in parameters.keys():
         param = param + ', normed='+ str(parameters['normed'])+''
-        p = count ** (1-parameters['normed'])
 
     if 'color' in parameters.keys():
         param = param + ',color="' + str(parameters['color'])+'"'
@@ -70,18 +56,16 @@ def histogram(data, parameters, output):
     if 'alpha' in parameters.keys():
         param = param + ',alpha=' + str(parameters['alpha'])
 
+    if 'rwidth' in parameters.keys():
+        param = param + ',rwidth=' + str(parameters['rwidth'])
+        
+    if 'bins' in parameters.keys():
+        exec("bins ="+parameters['bins'])
+
     # draw
-    # the histogram of the data
-    exec('n, bins, patches = plt.hist(x, num_bin'+ param +')')
-    # add a 'best fit' line
-    exec('y = mlab.normpdf(bins, mu, sigma)')
-    plt.plot(bins, y, 'r--')
-    plt.subplots_adjust(left=0.15)
-    
+    # Create a histogram by providing the bin edges (unequally spaced).
+    exec("fig = plt.hist(x, bins"+param+", histtype='bar')")
 
     savefig(output, format='svg')
-
-
-
 
     #end

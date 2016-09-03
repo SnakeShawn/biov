@@ -56,24 +56,14 @@ def contour3d(data, parameters, output):
 	
     param = ''
     if 'rstride' in parameters.keys():
-        param = param + ',rstride=' + parameters['rstride']
+        param = param + ',rstride=' + str(parameters['rstride'])
     if 'cstride' in parameters.keys():
-        param = param + ',cstride=' + parameters['cstride']
+        param = param + ',cstride=' + str(parameters['cstride'])
     if 'alpha' in parameters.keys():
-        param = param + ',alpha=' + parameters['alpha']
+        param = param + ',alpha=' + str(parameters['alpha'])
     if 'color' in parameters.keys():
         param = param + ',color="' + parameters['color'] + '"'
 
-    xoffset = ''
-    if 'xoffset' in parameters.keys():
-	xoffset = xoffset + ',offset=' + parameters['xoffset']
-    yoffset = ''
-    if 'yoffset' in parameters.keys():
-	yoffset = yoffset + ',offset=' + parameters['yoffset']
-    zoffset = ''
-    if 'zoffset' in parameters.keys():
-	zoffset = zoffset + ',offset=' + parameters['zoffset']
-	
     # draw
     exec("ax.plot_surface(X,Y,Z"+param+")")
     exec("ax.contour(X,Y,Z, zdir='x',offset=xmin,cmap=cm.coolwarm)")

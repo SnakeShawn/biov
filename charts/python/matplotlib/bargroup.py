@@ -51,7 +51,9 @@ def bargroup(data, parameters, output):
 
     param = ''
     if 'width' in parameters.keys():
-        param = param + ',width="' + parameters['width']+'"'
+        param = param + ',width="' + str(parameters['width'])+'"'
+    if 'alpha' in parameters.keys():
+        param = param + ',alpha="' + str(parameters['alpha'])+'"'
 
     # draw
     ax = fig.add_subplot(111)
@@ -64,7 +66,7 @@ def bargroup(data, parameters, output):
         cbar = plt.bar(xlocation, y[i], width, color=color[i], edgecolor='')
         legend = legend + (cbar[0],)
 
-    if 'legend' in parameters.keys() and parameters['legend']== 'true':
+    if 'legend' in parameters.keys() and parameters['legend']== 'True':
         fig.legend(legend, x, 'center right', bbox_to_anchor=(0.98, 0.5), fontsize =10)
 
     plt.xticks(xlocation_init, x)

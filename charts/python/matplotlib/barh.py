@@ -8,7 +8,6 @@ import csv
 import matplotlib.pyplot as plt
 plt.rcdefaults()
 import numpy as np
-import matplotlib.pyplot as plt
 from matplotlib.pyplot import savefig
 
 
@@ -16,6 +15,7 @@ def barh(data, parameters, output):
     # data
     x = []
     y = []
+    figsize = (8,6)
     with open(data) as f:
         f_csv = csv.reader(f)
         headers = next(f_csv)
@@ -23,7 +23,10 @@ def barh(data, parameters, output):
             y.append(row[0])
             x.append(int(row[1]))
 
-    # parameters
+    if 'figsize' in parameters.keys():
+        figsize = eval(parameters['figsize'])
+    fig = plt.figure(facecolor='w', figsize=figsize)
+
     if 'xlabel' in parameters.keys():
         plt.xlabel(parameters['xlabel'])
     if 'title' in parameters.keys():
@@ -33,10 +36,14 @@ def barh(data, parameters, output):
 
     param = ''
     if 'align' in parameters.keys():
-        param = param + ',align="' + parameters['align']+'"'
+        param = param + ',align="' + str(parameters['align'])+'"'
     if 'alpha' in parameters.keys():
-        param = param + ',alpha=' + parameters['alpha']
-    if 'num' in parameters.keys():
+        param = param + ',alpha=' + str(parameters['alpha'])
+    if 'color' in parameters.keys():
+        param = param + ',color="' + str(parameters['color'])+'"'
+    else:
+        param = param + ',color="#108484"'
+
     # draw
     y_pos = np.arange(len(y))
     exec("plt.barh(y_pos, x "+param+")")
@@ -44,5 +51,3 @@ def barh(data, parameters, output):
     plt.yticks(y_pos, y)
 
     savefig(output, format='svg')
-
-
