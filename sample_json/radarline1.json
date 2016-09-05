@@ -1,6 +1,6 @@
 {
 	"chart_id":"26",
-	"data":"data/radar1.csv",
+	"data":"sample_data/radar1.csv",
 	"parameters": {
 	    "frame":"circle",
 		"title":"Quality assessment",
@@ -9,5 +9,5 @@
 		"figsize":"(7,7)",
 		"linewidth": 3
 	},
-	"output":"output/radarline1.svg"
+	"output":"sample_img/radarline1.svg"
 }

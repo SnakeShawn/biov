@@ -1,6 +1,6 @@
 {
 	"chart_id":"12",
-	"data":"/Users/choumasijia/Projects/biov/data/errorbar.csv",
+	"data":"sample_data/errorbar.csv",
 	"parameters": {
 		"title":"Change of temperature in a day",
 		"xlabel":"time",
@@ -19,5 +19,5 @@
 		"barsabove":"true",
 		"linewidth":2
 	},
-	"output":"/Users/choumasijia/Projects/biov/output/errorbar.svg"
+	"output":"sample_img/errorbar.svg"
 }

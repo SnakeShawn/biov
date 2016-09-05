@@ -1,6 +1,6 @@
 {
 	"chart_id":"rggplot2geomdot",
-	"data":"/Users/choumasijia/Projects/biov/data/geomdot.csv",
+	"data":"sample_data/geomdot.csv",
 	"parameters": {
 		"binaxis":"y",
 		"stackdir":"center",
@@ -9,5 +9,5 @@
 			"y":"mpg"
 		}
 	},
-	"output":"/Users/choumasijia/Projects/biov/output/picture.svg"
+	"output":"sample_img/picture.svg"
 }

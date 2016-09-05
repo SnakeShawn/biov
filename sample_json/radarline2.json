@@ -1,6 +1,6 @@
 {
 	"chart_id":"27",
-	"data":"data/radar2.csv",
+	"data":"sample_data/radar2.csv",
 	"parameters": {
 	    "frame":"circle",
 		"title":"Quality assessment in nearly two years",
@@ -9,5 +9,5 @@
 		"figsize":"(10,10)",
 		"linewidth": 3
 	},
-	"output":"output/radarline2.svg"
+	"output":"sample_img/radarline2.svg"
 }

@@ -1,6 +1,6 @@
 {
 	"chart_id":"14",
-	"data":"data/violin.csv",
+	"data":"sample_data/violin.csv",
 	"parameters": {
 		"title":"violin plot",
 		"xlabel":"month",
@@ -11,5 +11,5 @@
 		"widths":0.5,
 		"points":100
 	},
-	"output":"output/violin.svg"
+	"output":"sample_img/violin.svg"
 }

@@ -1,6 +1,6 @@
 {
 	"chart_id":"24",
-	"data":"data/radar4.csv",
+	"data":"sample_data/radar4.csv",
 	"parameters": {
 	    "frame":"circle",
 		"title":"Quality assessment in nearly four years",
@@ -8,5 +8,5 @@
 		"colors":"['#E8B601','#7AC3B1','#6B7E23','#E53135']",
 		"figsize":"(10,10)"
 	},
-	"output":"output/radar4.svg"
+	"output":"sample_img/radar4.svg"
 }

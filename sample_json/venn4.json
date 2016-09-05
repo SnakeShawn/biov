@@ -1,8 +1,8 @@
 {
 	"chart_id":"8",
-	"data":"data/venn4.csv",
+	"data":"sample_data/venn4.csv",
 	"parameters": {
 		"title":"Student's distribution on playing games"
 	},
-	"output":"output/venn4.svg"
+	"output":"sample_img/venn4.svg"
 }

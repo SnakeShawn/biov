@@ -1,6 +1,6 @@
 {
 	"chart_id":"13",
-	"data":"/Users/choumasijia/Projects/biov/data/contour3d.csv",
+	"data":"sample_data/contour3d.csv",
 	"parameters": {
 		"title":"Contour3d plot",
 		"xlabel":"X",
@@ -11,5 +11,5 @@
 		"alpha":0.5,
 		"color":"yellow"
 	},
-	"output":"/Users/choumasijia/Projects/biov/output/contour3d.svg"
+	"output":"sample_img/contour3d.svg"
 }

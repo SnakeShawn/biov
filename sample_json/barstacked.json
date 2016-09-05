@@ -1,6 +1,6 @@
 {
 	"chart_id":"4",
-	"data":"data/barstacked.csv",
+	"data":"sample_data/barstacked.csv",
 	"parameters": {
 		"align":"center",
 		"title":"Expression of different gene",
@@ -10,5 +10,5 @@
 		"legend": "True",
 		"figsize": "(10,8)"
 	},
-	"output":"output/barstacked.svg"
+	"output":"sample_img/barstacked.svg"
 }

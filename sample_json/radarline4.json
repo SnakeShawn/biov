@@ -1,6 +1,6 @@
 {
 	"chart_id":"28",
-	"data":"data/radar4.csv",
+	"data":"sample_data/radar4.csv",
 	"parameters": {
 	    "frame":"circle",
 		"title":"Quality assessment in nearly four years",
@@ -9,5 +9,5 @@
 		"figsize":"(10,10)",
 		"linewidth": 3
 	},
-	"output":"output/radarline4.svg"
+	"output":"sample_img/radarline4.svg"
 }

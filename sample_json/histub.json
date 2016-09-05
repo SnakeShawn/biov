@@ -1,6 +1,6 @@
 {
 	"chart_id":"10",
-	"data":"data/hist.csv",
+	"data":"sample_data/hist.csv",
 	"parameters": {
 		"title":"Activity members' age",
 		"xlabel":"Age",
@@ -11,5 +11,5 @@
 		"alpha":0.5,
 		"bins":"[5,20,30,35,40,50,120]"
 	},
-	"output":"output/histub.svg"
+	"output":"sample_img/histub.svg"
 }

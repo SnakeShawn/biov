@@ -1,11 +1,11 @@
 {
 	"chart_id":"19",
-	"data":"data/pied.csv",
+	"data":"sample_data/pied.csv",
 	"parameters": {
 		"title":"Contries' PastGDP in 1870",
 		"legend":"True",
 		"percentage_legend":"True",
 		"figsize":"(12,6)"
 	},
-	"output":"output/piedisassemble.svg"
+	"output":"sample_img/piedisassemble.svg"
 }

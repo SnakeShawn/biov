@@ -1,6 +1,6 @@
 {
 	"chart_id":"9",
-	"data":"/Users/choumasijia/Projects/biov/data/hist.csv",
+	"data":"sample_data/hist.csv",
 	"parameters": {
 		"title":"Activity members' age",
 		"xlabel":"Age",
@@ -9,5 +9,5 @@
 		"num_bin":30,
 		"normed":2.3
 	},
-	"output":"/Users/choumasijia/Projects/biov/output/histogram.svg"
+	"output":"sample_img/histogram.svg"
 }

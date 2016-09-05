@@ -1,6 +1,6 @@
 {
 	"chart_id":"3",
-	"data":"bargroup.csv",
+	"data":"sample_data/bargroup.csv",
 	"parameters": {
 		"title":"Past GPD in Contries",
 		"xlabel":"Years",
@@ -10,5 +10,5 @@
 		"figsize":"(8,6)",
 		"legend":"True"
 	},
-	"output":"output/bargroup.svg"
+	"output":"sample_img/bargroup.svg"
 }
