@@ -1,0 +1,27 @@
+config_id,name,introduce,detail,demo_img,demo_json,demo_data,creator,create_time,update_time
+1,bar,A vertical bar chart showing the data distribution.,/detail/bar.txt,/output/bar.svg,/sample_json/bar.json,/data/bar.csv,Xu Zhang,16/8/2016,29/8/2016
+2,bar(horizontal),A horizontal bar chart showing the data distribution.,/detail/barh.txt,/output/barh.svg,/sample_json/barh.json,/data/bar.csv,Xu Zhang,16/8/2016,29/8/2016
+3,bar(grouped),A vertical bar chart showing distribution of different data group.,/detail/bargroup.txt,/output/bargroup.svg,/sample_json/bargroup.json,/data/bargroup.csv,Masijia Qiu,16/8/2016,29/8/2016
+4,stacked bar,A vertical stacked bar chart.,/detail/barstacked.txt,/output/barstacked.svg,/sample_json/barstacked.json,/data/barstacked.csv,Masijia Qiu,16/8/2016,29/8/2016
+5,stacked bar(normalized),A normalized vertical stacked bar chart.,/detail/barstackedn.txt,/output/barstackedn.svg,/sample_json/barstackedn.json,/data/barstackedn.csv,Masijia Qiu,16/8/2016,29/8/2016
+6,venn2,A two-way venn chart.,/detail/venn2.txt,/output/venn2.svg,/sample_json/venn2.json,/data/venn2.csv,Masijia Qiu,24/8/2016,
+7,venn3,A three-way venn chart.,/detail/venn3.txt,/output/venn3.svg,/sample_json/venn3.json,/data/venn3.csv,Masijia Qiu,24/8/2016,
+8,venn4,A four-way venn chart.,/detail/venn4.txt,/output/venn3.svg,/sample_json/venn4.json,/data/venn4.csv,Masijia Qiu,24/8/2016,
+9,histogram,A vertical histogram showing the data distribution among a consistent range and with Gause curve.,/detail/histogram.txt,/output/histogram.svg,/sample_json/histogram.json,/data/hist.csv,Liujun Yu,23/8/2016,
+10,histogram(unequal bins),A vertical histogram with unequal bin sizes showing the data distribution among a consistent range.,/detail/histub.txt,/output/histub.svg,/sample_json/histub.json,/data/hist.csv,Liujun Yu,23/8/2016,
+11,histogram(step filled),A vertical stepfilled histogram showing the data distribution among a consistent range.,/detail/histsf.txt,/output/histsf.svg,/sample_json/histsf.json,/data/hist.csv,Liujun Yu,23/8/2016,
+12,errorbar,An errorbar chart showing the degree of uncertainty.,/detail/errorbar.txt,/output/errorbar.svg,/sample_json/errorbar.json,/data/errorbar.csv,Masijia Qiu,22/8/2016,
+13,3D contour,A 3D contour chart.,/detail/contour3d.txt,/output/contour3d.svg,/sample_json/contour3d.json,/data/contour3d.csv,Masijia Qiu,24/8/2016,
+14,Pie ,A normal pie chart.,/detail/pienormal.txt,/output/pienormal.svg,/sample_json/pienormal.json,/data/pie.csv,Masijia Qiu,3/9/2016,
+15,Pie(doughnut),A doughnut-like pie chart.,/detail/piedoughnut.txt,/output/piedoughnut.svg,/sample_json/piedoughnut.json,/data/pie.csv,Masijia Qiu,3/9/2016,
+16,Pie(semicircle),A semicircle pie chart.,/detail/piesemic.txt,/output/piesemic.svg,/sample_json/piesemic.json,/data/pie.csv,Masijia Qiu,3/9/2016,
+17,Pie(semicircle doughnut),A semicircle doughnut-like pie chart.,/detail/piesemicd.txt,/output/piesemicd.svg,/sample_json/piesemicd.json,/data/pie.csv,Masijia Qiu,3/9/2016,
+18,Pie bar,A circler bar chart.,/detail/piebar.txt,/output/piebar.svg,/sample_json/piebar.json,/data/pie.csv,Masijia Qiu,3/9/2016,
+23,Radar,A radar chart displaying multivariate data in quantitative variables.,/detail/radar1.txt,/output/radar1.svg,/sample_json/radar1.json,/data/radar1.csv,Masijia Qiu,24/8/2016,
+24,Radar(2 in 1),Two radars displaying multivariate data in quantitative variables.,/detail/radar2.txt,/output/radar2.svg,/sample_json/radar2.json,/data/radar2.csv,Masijia Qiu,24/8/2016,
+25,Radar(4 in 1),Four radars displaying multivariate data in quantitative variables.,/detail/radar4.txt,/output/radar4.svg,/sample_json/radar4.json,/data/radar4.csv,Masijia Qiu,24/8/2016,
+26,Radar line,A radar chart displaying multivariate data in quantitative variables.,/detail/radar1.txt,/output/radarline1.svg,/sample_json/radarline1.json,/data/radar1.csv,Masijia Qiu,24/8/2016,
+27,Radar line(2 in 1),Two radars displaying multivariate data in quantitative variables.,/detail/radar2.txt,/output/radarline2.svg,/sample_json/radarline2.json,/data/radar2.csv,Masijia Qiu,24/8/2016,
+28,Radar line(4 in 1),Four radars displaying multivariate data in quantitative variables.,/detail/radar4.txt,/output/radarline4.svg,/sample_json/radarline4.json,/data/radar4.csv,Masijia Qiu,24/8/2016,
+28,violin box,A violin-like vertical histogram depicting groups of numerical data through their quartiles and showing the probability density of the data at different values.,/detail/violin.txt,/output/violin.svg,/sample_json/violin.json,/data/violin.csv,Ziwei Jiang,1/9/2016,
+29,violin box(horizontal),A violin-like horizontal histogram depicting groups of numerical data through their quartiles and showing the probability density of the data at different values,/detail/violinh.txt,/output/violinh.svg,/sample_json/violinh.json,/data/violinh.csv,Ziwei Jiang,1/9/2016,

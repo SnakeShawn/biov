@@ -3,10 +3,6 @@
 
 # My configuration
 .idea/*
-output/*
-data/*
-sample_json/*
-detail/*
 *.swp
 test.py
 input.json
