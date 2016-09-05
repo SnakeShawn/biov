@@ -241,7 +241,6 @@ def radar4(data, parameters, output):
             for i in range(2,cols):
                 x.append(float(row[i]))
 
-
     # parameters
     title = ''
     if 'title' in parameters.keys():
@@ -280,6 +279,220 @@ def radar4(data, parameters, output):
         for d,color in zip(x[i],colors):
             ax.plot(theta,d,color=color)
             ax.fill(theta,d,facecolor=color,alpha=_alpha)
+        plt.rgrids(rgrid)
+        ax.set_varlabels(labels)
+    
+    plt.subplot(2, 2, 1)
+    legend = plt.legend(p2, loc=(0.9, .95), labelspacing=0.1)
+    plt.setp(legend.get_texts(), fontsize='small')
+
+    plt.figtext(0.5, 0.965, title,
+                ha='center', color='black', weight='bold', size='large')
+    
+    savefig(output, format='svg')
+
+def radarline1(data, parameters, output):
+    # data
+    p = []
+    x = []
+    cols = 0
+    labels = []
+    with open(data) as f:
+        f_csv = csv.reader(f)
+        headers = next(f_csv)
+        cols = len(headers)
+        labels = headers[1:cols]
+        labels = tuple(labels)
+        for row in f_csv:
+            if row[0] not in p:
+                p.append(row[0])
+            for i in range(1,cols):
+                x.append(float(row[i]))
+
+
+    # parameters
+    title = ''
+    if 'title' in parameters.keys():
+        title = parameters['title']
+    _alpha = 0.5
+    if 'alpha' in parameters.keys():
+        _alpha = parameters['alpha']
+    _figsize = (9,9)
+    if 'figsize' in parameters.keys():
+        _figsize = eval(parameters['figsize'])
+    colors = ['b','r','g','m']
+    if 'colors' in parameters.keys():
+        colors = eval(parameters['colors'])
+    _frame = 'polygon'
+    if 'frame' in parameters.keys():
+        _frame = parameters['frame']
+    _linewidth = 2
+    if 'linewidth' in parameters.keys():
+        _linewidth = float(parameters['linewidth'])
+        
+    N1 = len(p)
+    N2 = cols-1
+    theta = radar_factory(N2,frame=_frame)
+    
+    rmin = math.ceil(max(x))/5
+    rgrid = [rmin,rmin*2,rmin*3,rmin*4,rmin*5]
+    x = np.asarray(x)
+    x = x.reshape(N1,N2)
+    
+    # draw
+    fig = plt.figure(figsize=_figsize)
+    fig.subplots_adjust(wspace=0.25, hspace=0.20, top=0.85, bottom=0.05)
+    
+    ax = fig.add_subplot(111,projection='radar')
+    for d,color in zip(x,colors):
+        ax.plot(theta,d,color=color, linewidth=_linewidth)
+    plt.rgrids(rgrid)
+    ax.set_varlabels(labels)
+    
+    plt.subplot(111)
+    legend = plt.legend(p, loc=(0.9, .95), labelspacing=0.1)
+    plt.setp(legend.get_texts(), fontsize='small')
+
+    plt.figtext(0.5, 0.965, title,
+                ha='center', color='black', weight='bold', size='large')
+    
+    savefig(output, format='svg')
+
+def radarline2(data, parameters, output):
+    # data
+    p1 = []
+    p2 = []
+    x = []
+    cols = 0
+    labels = []
+    with open(data) as f:
+        f_csv = csv.reader(f)
+        headers = next(f_csv)
+        cols = len(headers)
+        labels = headers[2:cols]
+        labels = tuple(labels)
+        for row in f_csv:
+            if row[0] not in p1:
+                p1.append(row[0])
+            if row[1] not in p2:
+                p2.append(row[1])
+            for i in range(2,cols):
+                x.append(float(row[i]))
+
+
+    # parameters
+    title = ''
+    if 'title' in parameters.keys():
+        title = parameters['title']
+    _alpha = 0.5
+    if 'alpha' in parameters.keys():
+        _alpha = parameters['alpha']
+    _figsize = (9,9)
+    if 'figsize' in parameters.keys():
+        _figsize = eval(parameters['figsize'])
+    colors = ['b','r','g','m']
+    if 'colors' in parameters.keys():
+        colors = eval(parameters['colors'])
+    _frame = 'polygon'
+    if 'frame' in parameters.keys():
+        _frame = parameters['frame']
+    _linewidth = 2
+    if 'linewidth' in parameters.keys():
+        _linewidth = float(parameters['linewidth'])
+        
+    N1 = len(p1)
+    N2 = len(p2)
+    N3 = cols-2
+    theta = radar_factory(N3,frame=_frame)
+    
+    rmin = math.ceil(max(x))/5
+    rgrid = [rmin,rmin*2,rmin*3,rmin*4,rmin*5]
+    x = np.asarray(x)
+    x = x.reshape(N1,N2,N3)
+    
+    # draw
+    fig = plt.figure(figsize=_figsize)
+    fig.subplots_adjust(wspace=0.25, hspace=0.20, top=0.95, bottom=0.35)
+    
+    for i in range(0,N1):
+        ax = fig.add_subplot(1,2,i+1,projection='radar')
+        ax.set_title(p1[i], weight='bold', size='medium', position=(0.5, 1.1),
+                     horizontalalignment='center', verticalalignment='center')
+        for d,color in zip(x[i],colors):
+            ax.plot(theta,d,color=color, linewidth=_linewidth)
+        plt.rgrids(rgrid)
+        ax.set_varlabels(labels)
+    
+    plt.subplot(1, 2, 1)
+    legend = plt.legend(p2, loc=(0.9, .95), labelspacing=0.1)
+    plt.setp(legend.get_texts(), fontsize='small')
+
+    plt.figtext(0.5, 0.965, title,
+                ha='center', color='black', weight='bold', size='large')
+    
+    savefig(output, format='svg')
+
+def radarline4(data, parameters, output):
+    # data
+    p1 = []
+    p2 = []
+    x = []
+    cols = 0
+    labels = []
+    with open(data) as f:
+        f_csv = csv.reader(f)
+        headers = next(f_csv)
+        cols = len(headers)
+        labels = headers[2:cols]
+        labels = tuple(labels)
+        for row in f_csv:
+            if row[0] not in p1:
+                p1.append(row[0])
+            if row[1] not in p2:
+                p2.append(row[1])
+            for i in range(2,cols):
+                x.append(float(row[i]))
+
+    # parameters
+    title = ''
+    if 'title' in parameters.keys():
+        title = parameters['title']
+    _alpha = 0.5
+    if 'alpha' in parameters.keys():
+        _alpha = parameters['alpha']
+    _figsize = (9,9)
+    if 'figsize' in parameters.keys():
+        _figsize = eval(parameters['figsize'])
+    colors = ['b','r','g','m']
+    if 'colors' in parameters.keys():
+        colors = eval(parameters['colors'])
+    _frame = 'polygon'
+    if 'frame' in parameters.keys():
+        _frame = parameters['frame']
+    _linewidth = 2
+    if 'linewidth' in parameters.keys():
+        _linewidth = float(parameters['linewidth'])
+        
+    N1 = len(p1)
+    N2 = len(p2)
+    N3 = cols-2
+    theta = radar_factory(N3,frame=_frame)
+    
+    rmin = math.ceil(max(x))/5
+    rgrid = [rmin,rmin*2,rmin*3,rmin*4,rmin*5]
+    x = np.asarray(x)
+    x = x.reshape(N1,N2,N3)
+    
+    # draw
+    fig = plt.figure(figsize=_figsize)
+    fig.subplots_adjust(wspace=0.25, hspace=0.20, top=0.85, bottom=0.05)
+    
+    for i in range(0,N1):
+        ax = fig.add_subplot(2,2,i+1,projection='radar')
+        ax.set_title(p1[i], weight='bold', size='medium', position=(0.5, 1.1),
+                     horizontalalignment='center', verticalalignment='center')
+        for d,color in zip(x[i],colors):
+            ax.plot(theta,d,color=color,linewidth=_linewidth)
         plt.rgrids(rgrid)
         ax.set_varlabels(labels)
     
