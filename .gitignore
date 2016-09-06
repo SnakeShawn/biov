@@ -5,6 +5,7 @@
 .idea/*
 *.swp
 test.py
+charts_foo.csv
 charts.xlsx
 output/*
 data/*

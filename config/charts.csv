@@ -29,6 +29,13 @@ chart_id,package,function
 28,charts.python.matplotlib.radar,radarline4
 29,charts.python.matplotlib.violin,violin
 30,charts.python.matplotlib.violinh,violinh
-31,charts.python.matplotlib.histogramh,histogram_horizontal
+31,charts.python.matplotlib.box,box
+32,charts.python.matplotlib.box_color,box_color
+33,charts.python.matplotlib.box_flier,box_flier
+34,charts.python.matplotlib.box_horizontal,box_horizontal
+35,charts.python.matplotlib.box_notch,box_notch
+36,charts.python.matplotlib.box_meanpoint,box_meanpoint
+37,charts.python.matplotlib.barcode,barcode
+40,charts.python.matplotlib.histogramh,histogram_horizontal
 50,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
