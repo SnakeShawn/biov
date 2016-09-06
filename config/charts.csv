@@ -36,6 +36,7 @@ chart_id,package,function
 35,charts.python.matplotlib.box_notch,box_notch
 36,charts.python.matplotlib.box_meanpoint,box_meanpoint
 37,charts.python.matplotlib.barcode,barcode
-40,charts.python.matplotlib.histogramh,histogram_horizontal
+38,charts.python.matplotlib.histogramh,histogram_horizontal
+
 50,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
