@@ -3,3 +3,4 @@
 """
 A barcode is an optical, machine-readable, representation of data.
 """
+"title"=[string] (Set a title of the current axes.)

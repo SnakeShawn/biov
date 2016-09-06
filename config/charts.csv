@@ -37,6 +37,12 @@ chart_id,package,function
 36,charts.python.matplotlib.box_meanpoint,box_meanpoint
 37,charts.python.matplotlib.barcode,barcode
 38,charts.python.matplotlib.histogramh,histogram_horizontal
-
+39,charts.python.matplotlib.histh_unequalBins,histh_unequalBins
+40,charts.python.matplotlib.histh_stepfilled,histh_stepfilled
+41,charts.python.matplotlib.hist_stepline,hist_stepline
+42,charts.python.matplotlib.histh_stepline,histh_stepline
+43,charts.python.matplotlib.hist_cumulatedLine,hist_cumulatedLine
+44,charts.python.matplotlib.hist_cumulated_reversed,hist_cumulated_reversed
+45,charts.python.matplotlib.step_line,step_line
 50,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
