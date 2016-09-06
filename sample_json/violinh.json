@@ -1,5 +1,5 @@
 {
-	"chart_id":"15",
+	"chart_id":"30",
 	"data":"sample_data/violinh.csv",
 	"parameters": {
 		"title":" Horizontal violin plot",
