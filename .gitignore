@@ -8,6 +8,7 @@ test.py
 charts.xlsx
 output/*
 data/*
+input.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
