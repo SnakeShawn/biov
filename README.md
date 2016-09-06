@@ -52,7 +52,6 @@ Recommend you to organize your project like this tree.
 │           └── geom_dotplot.py
 ├── output			默认输出路径（此文件夹下文件写入.gitignore）
 ├── data			建议test data路径（此文件夹下文件写入.gitignore）
-
 │   ├── Rplots.pdf
 │   ├── SOAPfuse-S09-3D-pillar-dist.pl
 │   ├── VirusIntg.SamplesHaplotype.MechStat.pl
@@ -63,7 +62,7 @@ Recommend you to organize your project like this tree.
 ├── sample_data			图库示例：示例数据
 │   ├── bar.csv
 │   └── ...
-├── sample_detail		图库示例：图片说明
+├── sample_detail			图库示例：图片说明
 │   ├── bar.txt
 │   └── ...
 ├── sample_img			图库示例：图片示例
