@@ -27,8 +27,6 @@ def violin(data, parameters, output):
 
      # parameters
     figsize=(8,5)
-    param=" "
-
     if 'figsize' in parameters.keys():
         figsize = eval(parameters['figsize'])
     fig = plt.figure(facecolor='w', figsize=figsize)
@@ -38,6 +36,8 @@ def violin(data, parameters, output):
         plt.title(parameters['title'])
     if 'ylabel' in parameters.keys():
         plt.ylabel(parameters['ylabel'])
+
+    param=" "
     if 'showmeans' in parameters.keys():
         param=param+',showmeans='+str(parameters['showmeans'])
     if 'showmedians' in parameters.keys():

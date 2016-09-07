@@ -1,7 +1,7 @@
 # Biological visualization
 
 ### Requirement
-> **Python2.7**：numpy,matplotlib
+> **Python2.7**：numpy,matplotlib,math,csv,seaborn,matplotlib_venn, random
 
 > **R**:ggplot2
 	
