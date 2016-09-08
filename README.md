@@ -1,9 +1,9 @@
 # Biological visualization
 
 ### Requirement
-> **Python2.7**：numpy,matplotlib
+> **Python2.7**: numpy,matplotlib
 
-> **R**:ggplot2
+> **R**: ggplot2
 	
 
 ### Structure
