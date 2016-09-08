@@ -1,5 +1,5 @@
 """
-Author: Masijia QIU 
+Author: Masijia Qiu
 Date: 2016/08/22
 Version: 1.0
 Description:

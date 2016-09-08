@@ -19,7 +19,7 @@ chart_id,package,function
 18,charts.python.matplotlib.piedisassemble,pie_bar
 19,charts.python.matplotlib.piedisassemble,pie_disassemble
 20,charts.python.matplotlib.piedisassemble,pie_disassemble_doughnut
-21,charts.python.matplotlib.piedisassemble,pie_dissassemble_area
+21,charts.python.matplotlib.piedisassemble,pie_disassemble_area
 22,charts.python.matplotlib.piedisassemble,pie_area
 23,charts.python.matplotlib.radar,radar1
 24,charts.python.matplotlib.radar,radar2

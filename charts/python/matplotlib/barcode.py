@@ -9,7 +9,6 @@ import csv
 import matplotlib.pyplot as plt
 plt.rcdefaults()
 import numpy as np
-import matplotlib.pyplot as plt
 from matplotlib.pyplot import savefig
 
 def barcode(data, parameters, output):
