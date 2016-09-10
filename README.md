@@ -1,9 +1,9 @@
 # Biological visualization
 
 ### Requirement
-> **Python2.7**：numpy,matplotlib,math,csv,seaborn,matplotlib_venn, random
+> **Python2.7**: numpy,matplotlib,math,csv,seaborn,matplotlib_venn, random
 
-> **R**:ggplot2
+> **R**: ggplot2
 	
 
 ### Structure
