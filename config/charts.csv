@@ -56,6 +56,13 @@ chart_id,package,function
 55,charts.python.matplotlib.vline,vline
 56,charts.python.matplotlib.hline,hline
 57,charts.python.matplotlib.stem,stem
+58,charts.python.matplotlib.line538,line538
+59,charts.python.matplotlib.finance,finance
+60,charts.python.matplotlib.stack,stack
+61,charts.python.matplotlib.xcorr,xcorr
+62,charts.python.matplotlib.acorr,acorr
+63,gray_mat
+
 
 70,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
