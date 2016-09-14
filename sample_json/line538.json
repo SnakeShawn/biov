@@ -1,0 +1,13 @@
+{
+	"chart_id":"58",
+	"data":"sample_data/line538.csv",
+	"parameters": {
+		"title":"plot line538",
+		"xlabel":"time",
+		"ylabel":"temperature",
+		"width":3,
+		"color":"[1,'red']",
+		"figsize":"(8,5)"
+	},
+	"output":"sample_img/line538.svg"
+}
