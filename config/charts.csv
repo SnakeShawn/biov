@@ -44,7 +44,7 @@ chart_id,package,function
 43,charts.python.matplotlib.hist_cumulatedLine,hist_cumulatedLine
 44,charts.python.matplotlib.hist_cumulated_reversed,hist_cumulated_reversed
 45,charts.python.matplotlib.step_line,step_line
-46,multiple_histogram_side_by_side
+46,charts.python.matplotlib.multihist_side_by_side,multihist_side_by_side
 47,hist_beta
 48,charts.python.matplotlib.hist_2d,hist_2d
 49,charts.python.matplotlib.hist_2d_log,hist_2d_log
