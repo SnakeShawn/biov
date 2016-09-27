@@ -7,5 +7,5 @@ A stacked area chart.
 "xlabel"=[string] (Set the x axis label of the current axis.)
 "ylabel"=[string] (Set the y axis label of the current axis.)
 "figsize"="(6,6)" (Set the width and height of the figture.)
-"color"="[1,"red"][int,"any matplotlib color",int,"any matplotlib color"...](An array to set color of each line)
+"color"="['#BDA09C','#0C5C4F','#AAD9A5']"[any matplotlib color](An array of color to set color of each line, without this parameter, color will be assigned randomly.)
 

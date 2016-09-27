@@ -3,6 +3,9 @@
 """
 Autocorrelation, also known as serial correlation, is the correlation of a signal with itself at different points in time.
 """
+"title"=[string] (Set a title of the current axes.)
+"xlabel"=[string] (Set the x axis label of the current axis.)
+"ylabel"=[string] (Set the y axis label of the current axis.)
 "figsize"="(6,6)" (Set the width and height of the figture.)
 "lw"="2"[float](Set the width of width of box outer margin line.)
 "color"="black"[any matplotlib color](Set the color of lines.)

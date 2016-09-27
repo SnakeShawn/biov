@@ -30,7 +30,6 @@ def stack(data, parameters, output):
 	#parameters
 	figsize=(8,6)
 	param=""
-	setcolor=[]
 	colors = ['#BCD8E3', '#E0A295', '#75625E', '#7F9AA5', '#AFCDD8', '#E9CDA6', '#70B879', 
 	'#E8E098', '#898A82','#BDA09C', '#D76475', '#F2C2B8', '#0C5C4F', '#108484', '#F7AF02', 
 	'#F29653', '#7C976A', '#FFE983','#70B879', '#AAD9A5', '#8AC2BF']
@@ -45,16 +44,16 @@ def stack(data, parameters, output):
 	if 'ylabel' in parameters.keys():
 		plt.ylabel(parameters['ylabel'])
 	if 'color' in parameters.keys():
-		setcolor=eval(parameters['color'])
-		for a in range(len(setcolor)/2):
-			num=setcolor[2*a]
-			color[num-1]=setcolor[2*a+1]
+		color=eval(parameters['color'])
 
 	#draw
-	exec("plt.stackplot(x,all_data,colors=color"+param+")")
+	exec("plot1=plt.stackplot(x,all_data,colors=color"+param+")")
 
 	# adding horizontal grid lines
 	plt.grid(True,linestyle='--',linewidth=0.5)
+
+	#add legend
+	plt.legend(plot1,headers[1:])
 
 
 	savefig(output,format='svg')

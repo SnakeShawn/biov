@@ -6,7 +6,7 @@
 		"title":"stackplot",
 		"xlabel":"x",
 		"ylabel":"y",
-		"color":"[1,'#BDA09C',2,'#0C5C4F',3,'#AAD9A5']"
+		"color":"['#BDA09C','#0C5C4F','#AAD9A5']"
 	},
 	"output":"sample_img/stack.svg"
 }

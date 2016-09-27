@@ -61,8 +61,14 @@ chart_id,package,function
 60,charts.python.matplotlib.stack,stack
 61,charts.python.matplotlib.xcorr,xcorr
 62,charts.python.matplotlib.acorr,acorr
-63,gray_mat
-
+63,charts.python.matplotlib.graymat,graymat
+64,charts.python.seaborn.violin_1,violin_1
+65,charts.python.seaborn.violin_2,violin_2
+66,charts.python.seaborn.violin_3,violin_3
+67,charts.python.seaborn.violin_4,violin_4
+68,charts.python.seaborn.violin_5,violin_5
+69,charts.python.seaborn.violin_6,violin_6
+70,charts.python.seaborn.violin_7,violin_7
 
 70,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot

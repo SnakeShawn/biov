@@ -6,7 +6,7 @@
 		"xlabel":"time",
 		"ylabel":"temperature",
 		"width":3,
-		"color":"[1,'red']",
+		"color":"['#F29653','#0C5C4F','#AAD9A5']",
 		"figsize":"(8,5)"
 	},
 	"output":"sample_img/line538.svg"

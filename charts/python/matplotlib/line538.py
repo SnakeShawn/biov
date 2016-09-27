@@ -48,10 +48,7 @@ def line538(data, parameters, output):
     if 'ylabel' in parameters.keys():
         plt.ylabel(parameters['ylabel'])
     if 'color' in parameters.keys():
-        setcolor=eval(parameters['color'])
-        for a in range(len(setcolor)/2):
-            num=setcolor[2*a]
-            color[num-1]=setcolor[2*a+1]
+        color=eval(parameters['color'])
     if 'width' in parameters.keys():
     	param=param+",linewidth="+str(parameters['width'])
 
@@ -60,10 +57,13 @@ def line538(data, parameters, output):
 	# draw
     with plt.style.context('fivethirtyeight'):
         for a in range(count):
-            exec("plt.plot(x["+str(a)+"]"+",y["+str(a)+"],color=color["+str(a)+"]"+param+")")
+            exec("plot"+str(a)+"=plt.plot(x["+str(a)+"]"+",y["+str(a)+"],label=headers[2*a+1],color=color["+str(a)+"]"+param+")")
 
 	# adding horizontal grid lines
     plt.grid(True,linestyle='--',linewidth=0.5)
+
+    #add legend
+    plt.legend()
 
 
     savefig(output,format='svg')
