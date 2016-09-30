@@ -69,6 +69,15 @@ chart_id,package,function
 68,charts.python.seaborn.violin_5,violin_5
 69,charts.python.seaborn.violin_6,violin_6
 70,charts.python.seaborn.violin_7,violin_7
+71,charts.python.seaborn.box_swarm,box_swarm
+72,charts.python.seaborn.violin_swarm,violin_swarm
+73,charts.python.seaborn.scatter1,scatter1
+74,charts.python.seaborn.scatter2,scatter2
+75,charts.python.seaborn.scatter3,scatter3
+76,charts.python.seaborn.scatter4,scatter4
+78,charts.python.seaborn.scatter6,scatter6
+79,charts.python.seaborn.violin_8,violin_8
+80,charts.python.seaborn.regplot,regplot
 
-70,charts.python.matplotlib.bars3d,bars3d
+200,charts.python.matplotlib.bars3d,bars3d
 rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
