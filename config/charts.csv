@@ -1,4 +1,18 @@
 chart_id,package,function
+rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
+rggplot2geomabline,charts.r.ggplot2.geom_line,geom_abline
+rggplot2geomhline,charts.r.ggplot2.geom_line,geom_hline
+rggplot2geomvline,charts.r.ggplot2.geom_line,geom_vline
+rggplot2geombar,charts.r.ggplot2.geom_bar,geom_bar
+rggplot2geombox,charts.r.ggplot2.geom_box,geom_box
+rggplot2geomtransbox,charts.r.ggplot2.geom_box,geom_transbox
+rggplot2geomcontour,charts.r.ggplot2.geom_contour,geom_contour
+rggplot2geomdensity,charts.r.ggplot2.geom_density,geom_density
+rggplot2geomhistogram,charts.r.ggplot2.geom_histogram,geom_histogram
+rggplot2geomfreqpoly,charts.r.ggplot2.geom_histogram,geom_freqpoly
+rggplot2geomhex,charts.r.ggplot2.geom_hex,geom_hex
+rggplot2geomviolin,charts.r.ggplot2.geom_violin,geom_violin
+rggplot2geomtransviolin,charts.r.ggplot2.geom_violin,geom_transviolin
 1,charts.python.matplotlib.bar,bar
 2,charts.python.matplotlib.barh,barh
 3,charts.python.matplotlib.bargroup,bargroup
@@ -80,4 +94,3 @@ chart_id,package,function
 80,charts.python.seaborn.regplot,regplot
 
 200,charts.python.matplotlib.bars3d,bars3d
-rggplot2geomdot,charts.r.ggplot2.geom_dotplot,geom_dotplot
