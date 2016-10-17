@@ -105,7 +105,7 @@ def geom_transviolin(data, parameters, output):
 #        os.system('echo "setEPS()" >>'+r_tmp_file)
 #        os.system('echo "postscript(\''+output+'\')" >>'+r_tmp_file)
         os.system('echo "p = ggplot(input_data'+aes_param+')" >> '+r_tmp_file)
-        os.system('echo "image = p+geom_violin('+geom_param+')" >> '+r_tmp_file)
+        os.system('echo "image = p+geom_violin('+geom_param+')+ coord_flip()" >> '+r_tmp_file)
         os.system('echo "ggsave(file=\''+output+'\', plot=image)" >> '+r_tmp_file)
 #        os.system('echo "dev.off()" >>'+r_tmp_file)
         os.system(rscript_cmd+' '+r_tmp_file)
