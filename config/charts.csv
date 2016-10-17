@@ -13,6 +13,7 @@ rggplot2geomfreqpoly,charts.r.ggplot2.geom_histogram,geom_freqpoly
 rggplot2geomhex,charts.r.ggplot2.geom_hex,geom_hex
 rggplot2geomviolin,charts.r.ggplot2.geom_violin,geom_violin
 rggplot2geomtransviolin,charts.r.ggplot2.geom_violin,geom_transviolin
+rgraphicshclust,charts.r.graphics.hclust,hclust
 1,charts.python.matplotlib.bar,bar
 2,charts.python.matplotlib.barh,barh
 3,charts.python.matplotlib.bargroup,bargroup
