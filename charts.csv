@@ -12,7 +12,7 @@ rggplot2geomhistogram,GeomHistogram,A geomhistogram plot.,/sample_detail/geomhis
 rggplot2geomfreqpoly,GeomFreqpoly,A geomfreqpoly plot.,/sample_detail/geomfreqpoly.txt,/sample_img/geomfreqpoly.svg,/sample_json/geomfreqpoly.json,/sample_data/diamonds.csv,Xu Zhang,22/9/2016,
 rggplot2geomhex,GeomHex,A geomHex plot.,/sample_detail/geomhex.txt,/sample_img/geomhex.svg,/sample_json/geomhex.json,/sample_data/diamonds.csv,Xu Zhang,22/9/2016,
 rggplot2geomviolin,GeomViolin,A geomViolin plot.,/sample_detail/geomviolin.txt,/sample_img/geomviolin.svg,/sample_json/geomviolin.json,/sample_data/mtcars.csv,Xu Zhang,22/9/2016,
-rggplot2geomtransviolin,GeomTransViolin,A geomTransViolin plot.,/sample_detail/geomtransviolin.txt,/sample_img/geomTransviolin.svg,/sample_json/geomtransviolin.json,/sample_data/mtcars.csv,Xu Zhang,22/9/2016,
+rggplot2geomtransviolin,GeomTransViolin,A geomTransViolin plot.,/sample_detail/geomtransviolin.txt,/sample_img/geomtransviolin.svg,/sample_json/geomtransviolin.json,/sample_data/mtcars.csv,Xu Zhang,22/9/2016,
 rgraphicshclust,GraphicsHClust,A GraphicsHClust plot.,/sample_detail/rgraphicshclust.txt,/sample_img/rgraphicshclust.svg,/sample_json/rgraphicshclust.json,/sample_data/mtcars.csv,Xu Zhang,22/9/2016,
 1,Bar,A vertical bar chart showing the data distribution.,/sample_detail/bar.txt,/sample_img/bar.svg,/sample_json/bar.json,/sample_data/bar.csv,Xu Zhang,16/8/2016,29/8/2016
 2,Bar(horizontal),A horizontal bar chart showing the data distribution.,/sample_detail/barh.txt,/sample_img/barh.svg,/sample_json/barh.json,/sample_data/bar.csv,Xu Zhang,16/8/2016,29/8/2016
