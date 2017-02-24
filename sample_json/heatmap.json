@@ -1,0 +1,8 @@
+{
+	"chart_id":"95",
+	"data":"heatmap.csv",
+	"parameters": {
+		"title": "heatmap demo graph",
+	},
+	"output":"heatmap.svg"
+}

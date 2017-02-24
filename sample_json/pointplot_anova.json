@@ -1,0 +1,8 @@
+{
+	"chart_id":"99",
+	"data":"pointplot_anova.csv",
+	"parameters": {
+		"title": "Plotting a three-way ANOVA",
+	},
+	"output":"pointplot_anova.svg"
+}
