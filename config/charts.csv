@@ -96,7 +96,7 @@ rgraphicshclust,charts.r.graphics.hclust,hclust
 95,charts.python.matplotlib.heatmap,heatmap 
 96,charts.python.matplotlib.radial_tree,radial_tree
 97,charts.python.matplotlib.scatter3d,scatter3d
-98,charts.python.matplotlib.logistic_regression,logistic_regression
-99,charts.python.matplotlib.pointplot_anova,pointplot_anova
-100,charts.python.matplotlib.regression_with_marginal_distribution,regression_with_marginal_distribution
-101,charts.python.matplotlib.structured_heatmap,structured_heatmap
+98,charts.python.seaborn.logistic_regression,logistic_regression
+99,charts.python.seaborn.pointplot_anova,pointplot_anova
+100,charts.python.seaborn.regression_with_marginal_distribution,regression_with_marginal_distribution
+101,charts.python.seaborn.structured_heatmap,structured_heatmap
