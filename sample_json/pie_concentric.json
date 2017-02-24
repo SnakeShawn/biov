@@ -2,7 +2,7 @@
 	"chart_id":"22",
 	"data":"sample_data/pied.csv",
 	"parameters": {
-		"title":"Contries' PastGDP in 1870",
+		"title":"Countries' PastGDP in 1870",
 		"legend":"True",
 		"percentage_legend":"True",
 		"figsize":"(12,6)"

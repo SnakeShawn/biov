@@ -20,9 +20,6 @@ def histsf(data, parameters, output):
     with open(data) as f:
         f_csv = csv.reader(f)
         headers = next(f_csv)
-        #headers: list
-
-        #input array number
         n = len(headers)
         i = 0
         while (i < n):
