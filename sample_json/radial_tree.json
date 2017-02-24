@@ -1,8 +1,8 @@
 {
 	"chart_id":"96",
-	"data":"radial_graph.csv",
+	"data":"sample_data/radial_graph.csv",
 	"parameters": {
-		"title": "radial tree graph",
+		"title": "radial tree graph"
 	},
-	"output":"radial_graph.svg"
+	"output":"sample_img/radial_graph.svg"
 }

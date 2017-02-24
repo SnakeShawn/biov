@@ -1,6 +1,6 @@
 {
 	"chart_id":"98",
-	"data":"logistic_regression.csv",
+	"data":"sample_data/logistic_regression.csv",
 	"parameters": {
 		"title": "logistic regression demo",
         "color": {
@@ -14,5 +14,5 @@
         "xlim": [0, 80],
         "ylim": [-0.05, 1.05]
 	},
-	"output":"logistic_regression.svg"
+	"output":"sample_img/logistic_regression.svg"
 }

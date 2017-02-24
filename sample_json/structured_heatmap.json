@@ -1,8 +1,8 @@
 {
 	"chart_id":"101",
-	"data":"structured_heatmap.csv",
+	"data":"sample_data/structured_heatmap.csv",
 	"parameters": {
 		"title": "structured heatmap demo",
 	},
-	"output":"structured_heatmap.svg"
+	"output":"sample_img/structured_heatmap.svg"
 }

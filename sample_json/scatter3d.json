@@ -1,6 +1,6 @@
 {
 	"chart_id":"97",
-	"data":"scatter3d.csv",
+	"data":"sample_data/scatter3d.csv",
 	"parameters": {
 		"title": "The Example Graph of 3D scatterplot",
     	"format": {
@@ -11,5 +11,5 @@
      	"y-label": "Y Label",
      	"z-label": "Z Label"
 	},
-	"output":"scatter3d.svg"
+	"output":"sample_img/scatter3d.svg"
 }
