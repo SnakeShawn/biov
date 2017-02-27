@@ -99,4 +99,4 @@ rgraphicshclust,charts.r.graphics.hclust,hclust
 98,charts.python.seaborn.logistic_regression,logistic_regression
 99,charts.python.seaborn.pointplot_anova,pointplot_anova
 100,charts.python.seaborn.regression_with_marginal_distribution,regression_with_marginal_distribution
-101,charts.python.seaborn.structured_heatmap,structured_heatmap
+102,charts.python.seaborn.structured_heatmap,structured_heatmap

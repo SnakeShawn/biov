@@ -1,5 +1,5 @@
 {
-	"chart_id":"101",
+	"chart_id":"102",
 	"data":"sample_data/structured_heatmap.csv",
 	"parameters": {
 		"title": "structured heatmap demo",
